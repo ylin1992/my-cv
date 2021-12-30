@@ -1,0 +1,124 @@
+
+:root {
+    --card-title-color-deeplblue: #1A374D;
+    --card-description-color-deeplblue: #406882;
+}
+
+.post-section {
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.post-section > hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-section > h1 {
+    color: var(--card-title-color-deeplblue);
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+}
+
+.posts-container {
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 12px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.post-container {
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    /* padding: 15px; */
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-container > p {
+    word-break: break-word;
+    color: var(--card-description-color-deeplblue);
+    padding: 0.3rem;
+}
+
+.post-container > a {
+    text-decoration: none;
+    color: var(--card-title-color-deeplblue);
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    padding: 0.3rem;
+}
+
+.post-container > img {
+    width: 100%;
+    border-radius: 20px;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.post-image {
+    position: relative;
+    min-height: 8rem;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post-container:last-child {
+    margin-right: 0;
+}
+
+
+.loading {
+    text-align: center;
+}
+
+.loading > span {
+    color : var(--card-description-color-deeplblue);
+}
+
+@media (max-width: 768px) {
+    .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+@media (max-width: 450px) {
+    .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }   
+}
+
+
+@media (min-width: 1920px) {
+    .posts-container {
+        max-width: 1080px;
+    }
+}
+
+@media (min-width: 992px) {
+    .posts-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .posts-container {
+        max-width: 720px;
+    }
+}

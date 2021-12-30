@@ -1,0 +1,173 @@
+/* color theme: https://colorhunt.co/palette/93b5c6c9ccd5e4d8dcffe3e3*/
+body{
+    text-align: center;
+}
+
+header{
+    font-family: 'Josefin Sans', sans-serif;
+    /*background-color: #93B5C6;
+    background: linear-gradient(0deg,#FFE3E3,#C9CCD5,#93B5C6);*/
+    padding-bottom: 2rem;
+}
+header h1{
+    color: white;
+    text-shadow: rgb(24, 24, 24) 0.1em 0.1em 0.2em;
+    text-align: left;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    line-height: 0.9em;
+    font-size: 100px;
+}
+
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+  
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+  
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  div.full-screen-color {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+  
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+  
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #93B5C6;
+    background: linear-gradient(0deg,#FFE3E3,#C9CCD5,#93B5C6);
+  }
+  
+
+
+.animate-header{
+    padding-top: 1.5rem;
+}
+
+header h3{
+    padding-left: 5rem;
+    font-size: 30px;
+}
+
+.animated-text{
+    color: white;
+    text-shadow: rgb(67, 65, 65) 0.1em 0.1em 0.2em;
+    font-size: 40px;
+}
+
+header .subtitle{
+    padding-top: 2rem
+}
+
+li {
+    display: inline-block;
+}
+
+.div-icon{
+    margin-left: 4rem;
+    margin-top: 1rem;
+    display: absolute;
+}
+
+.icons {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 30px;
+    border-radius: 100%;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.icons:hover{
+    font-size: 40px;
+}
+/* this psuedo element that shares icon's properties of which 
+   the icon is hovered over is to prevent a layout shift while 
+   users hovering around.
+*/
+.icon-link::before{
+    font-size: 40px;
+    content: attr(icon-link);
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.profile-image{
+    width: 100%;
+    border-radius: 100%;
+    border: solid white 3px;
+}
+
+.navbar{
+    color:#fff;
+    font-size: medium;
+}
+
+.navbar-items{
+    border-right: solid rgba(255, 255, 255,0.5) 2px;
+}
+
+
+/* about section */
+#about {
+    padding: 4.5rem;
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+}
+
+#about h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+@media (max-width: 770px) {
+    header h1{
+        font-size: 60px;
+        text-align: center;
+        margin: 1rem 0 1rem 0;
+    }
+    header h3{
+        font-size: 20px;
+        text-align: center;
+        margin: 1rem 0 1rem 0;
+        padding: 0
+    }
+    
+    .animated-text{
+        font-size: 30px;
+        text-align: center;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .div-icon{
+        text-align: center;
+        margin: 1rem 0 1rem 0;
+        padding: 0;
+    }
+    
+
+}
+
+@media (max-width: 770px) {
+    .div-profile-img{
+        text-align: center;
+    }
+    .profile-image{
+        width: 50%;
+    }
+}
