@@ -1,0 +1,17 @@
+
+
+
+@media screen and (max-width: 847px) {
+    #header .header-content{
+        text-align: center;
+        padding-left:0;
+    }
+    
+    #header ul{
+        padding-left: 0;
+    }
+
+    #header {
+        width: auto;
+    }
+}

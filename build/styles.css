@@ -1,0 +1,172 @@
+/* color theme: https://colorhunt.co/palette/93b5c6c9ccd5e4d8dcffe3e3*/
+/* color theme: https://designs.ai/colors/palette/1493*/
+html{
+    overflow: scroll
+}
+
+body{
+    text-align: center;
+    background-color: #ffffff !important;
+    min-width: 290px;
+}
+
+/* navbar */
+.scrolled-down{
+    display: block !important;
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+.scrolled-up{
+    display: block !important;
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+
+#header .navbar-items{
+    border-right: solid rgba(255, 255, 255,0.5) 2px;
+}
+#navbar-container{
+    color:rgb(0, 0, 0);
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: block;
+    opacity: 0.5;
+}
+
+#navbar-container:hover {
+    opacity: 1;
+}
+
+
+/* header */
+div.full-screen-color {
+    min-height: 100%;
+    min-width: 1024px;
+    
+    width: 100vw;
+    height: 100vh;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    overflow: hidden;
+    background-color: #93B5C6;
+    background: linear-gradient(0deg,#FFE3E3,#C9CCD5,#93B5C6);
+    }
+
+#header{
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    background: url("./images/header-bg-image.png") repeat scroll center center / cover;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#header .header-content{
+    padding-top: 25vh;
+    height: 100vh;
+    text-align: left;
+    width: 100%;
+    padding-left: 10vw;
+}
+
+
+#header h1{
+    color: white;
+    text-shadow: rgb(24, 24, 24) 0.1em 0.1em 0.2em;
+    line-height: 0.9em;
+    font-size: 9vw;
+}
+
+#header h2{
+    color: white;
+    text-shadow: rgb(24, 24, 24) 0.1em 0.1em 0.2em;
+    line-height: 0.9em;
+    font-size: 6vw;
+}
+
+#header .animate-header{
+    padding-top: 1.5rem;
+}
+
+#header h3{
+    font-size: 3vw;
+}
+
+.animated-text{
+    color: white;
+    text-shadow: rgb(67, 65, 65) 0.1em 0.1em 0.2em;
+    font-size: 4vw;
+}
+
+#header .subtitle{
+    padding-top: 2rem
+}
+
+#header li {
+    display: inline-block;
+}
+
+.div-icon{
+    margin-top: 1rem;
+    display: absolute;
+}
+
+.icons {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 30px;
+    border-radius: 100%;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.icons:hover{
+    font-size: 40px;
+}
+/* this psuedo element that shares icon's properties of which 
+   the icon is hovered over is to prevent a layout shift while 
+   users hovering around.
+*/
+.icon-link::before{
+    font-size: 40px;
+    content: attr(icon-link);
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+
+
+
+/* footer */
+#footer{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    background-color: #e2eff1;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+
+#footer li{
+    list-style-type: none;
+    display: inline;
+    color: black;
+    font-size: 30px;
+    border-radius: 100%;
+    padding: 2rem;
+}
+
+@media (max-width: 523px) {
+   #footer li {
+    padding: 1rem;
+   }
+}
+
+
