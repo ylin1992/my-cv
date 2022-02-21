@@ -38,7 +38,8 @@ function About() {
                         <li>Machine learning based blemish detection tools</li>
                         <li>Stereo-alignment calibration tools</li>
 
-                      <p className="side-note job-description">Patent: <a className="side-note" href="https://twpat2.tipo.gov.tw/twpatc/twpatkm?.1f5700B7A00010000000001000000000000^500001000230001015A140c8">METHOD AND DEVICE FOR ELIMINATING RING EFFECT</a></p>
+                      <p className="side-note job-description">Patent: <a className="side-note" href="https://patents.google.com/patent/US20210174480A1/">METHOD AND DEVICE FOR ELIMINATING RING EFFECT</a></p>
+                      <p className="side-note job-description">Patent: <a className="side-note" href="https://twpat1.tipo.gov.tw/twpatengusr/00003/zip/dc.xml?1243847653"> COMPUTATION APPARATUS AND METHOD OF DETECTING DEFECTS FOR NEAR-EYE DISPLAY</a></p>
                     </div>
                     <div className="single-position">
 
