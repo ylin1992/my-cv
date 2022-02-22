@@ -36,7 +36,7 @@ function About() {
                         <li>AOI tools development</li>
                         <li>AOI logging framework design</li>
                         <li>Machine learning based blemish detection tools</li>
-                        <li>Stereo-alignment calibration tools</li>
+                        <li>Stereo-alignment calibration tools developement</li>
 
                       <p className="side-note job-description">Patent: <a className="side-note" href="https://patents.google.com/patent/US20210174480A1/">METHOD AND DEVICE FOR ELIMINATING RING EFFECT</a></p>
                       <p className="side-note job-description">Patent: <a className="side-note" href="https://twpat1.tipo.gov.tw/twpatengusr/00003/zip/dc.xml?1243847653"> COMPUTATION APPARATUS AND METHOD OF DETECTING DEFECTS FOR NEAR-EYE DISPLAY</a></p>
@@ -52,6 +52,7 @@ function About() {
                         <li>Image Qaulity Inspection(IQI) tools</li>
                         <li>AR/VR lens design and spec review</li>
                         <li>Evaluation and spec review of AR/VR display</li>
+                        <li>Construction of holistic AOI testing environment for AR/VR products</li>
                     </div>              
                 </div>
                 {/* ============ Skills ============= */}
